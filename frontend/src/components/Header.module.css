@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: var(--pitch-mid);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ball {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.title {
+  font-size: 1.7rem;
+  color: var(--lime);
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controlGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.pills {
+  display: flex;
+  gap: 4px;
+}
+
+.pill {
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--pitch-green);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.pill:hover {
+  background: var(--pitch-dark);
+  color: var(--white);
+}
+
+.pill.active {
+  background: var(--lime);
+  color: var(--pitch-dark);
+  border-color: var(--lime);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header  { padding: 16px 20px; }
+  .title   { font-size: 1.4rem;  }
+  .controls { gap: 12px; }
+}

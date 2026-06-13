@@ -1,0 +1,13 @@
+flask==3.0.3
+flask-cors==4.0.1
+ibm-watsonx-ai==1.1.2
+docling==2.5.0
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-ibm==0.1.11
+faiss-cpu==1.14.2
+sentence-transformers==3.0.1
+python-dotenv==1.0.1
+requests==2.32.3
+flask-socketio==5.3.6
+eventlet==0.35.2

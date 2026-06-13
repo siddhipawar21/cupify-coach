@@ -1,0 +1,103 @@
+/* Cupify Coach Design System
+   Palette: Deep pitch green + Electric lime + White + Warm sand
+   Typography: Syne (display) + Inter (body)
+   Aesthetic: Stadium at night
+*/
+
+:root {
+  --pitch-dark:  #0a1a0f;
+  --pitch-mid:   #0f2818;
+  --pitch-green: #1a4428;
+  --lime:        #b5ff47;
+  --lime-dim:    #8fd130;
+  --white:       #f5f9f0;
+  --sand:        #e8dfc4;
+  --sand-dim:    #c4b99a;
+  --card-bg:     #122010;
+  --card-border: #1e3a22;
+  --text-primary:   #f0f7eb;
+  --text-secondary: #8aad8e;
+  --red-card:    #ff4444;
+  --yellow-card: #ffd600;
+
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   24px;
+  --radius-pill: 999px;
+
+  --shadow:      0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lime: 0 0 20px rgba(181, 255, 71, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--pitch-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--pitch-dark); }
+::-webkit-scrollbar-thumb { background: var(--pitch-green); border-radius: 3px; }
+
+/* Typography utility classes */
+.display { font-family: 'Syne', sans-serif; font-weight: 800; }
+.heading  { font-family: 'Syne', sans-serif; font-weight: 700; }
+
+/* Color utilities */
+.lime-text { color: var(--lime); }
+.sand-text { color: var(--sand); }
+.muted     { color: var(--text-secondary); }
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.18s ease;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+

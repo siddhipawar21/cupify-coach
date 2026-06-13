@@ -1,0 +1,120 @@
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow);
+}
+
+.question {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.qIcon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  background: var(--pitch-green);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--lime);
+}
+
+.question p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.5;
+  padding-top: 2px;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+}
+
+.varTag {
+  background: rgba(255, 214, 0, 0.1);
+  border-color: var(--yellow-card);
+  color: var(--yellow-card);
+}
+
+.answer {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: rgba(181, 255, 71, 0.04);
+  border: 1px solid rgba(181, 255, 71, 0.1);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.aIcon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.answerText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answerText p {
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.sources {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sourcesLabel {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.source {
+  padding: 2px 8px;
+  background: var(--pitch-green);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  text-align: right;
+}
+
